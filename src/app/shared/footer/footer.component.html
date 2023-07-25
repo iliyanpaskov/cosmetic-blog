@@ -1,1 +1,27 @@
-<p>footer works!</p>
+<footer class="footer">
+    <div class="footer__clock">
+        {{$time | async | date:"dd MMMM yyyy - HH:mm:ss" }}
+    </div>
+    <ul class="footer__list">
+        <li class="footer__list__item">
+            <a routerLink="/">home</a>
+        </li>
+        <li class="footer__list__item">
+            <a routerLink="/about">for mxox</a>
+        </li>
+        <li class="footer__list__item">
+            <a routerLink="/order">how to order</a>
+        </li>
+        <li class="footer__list__item">
+            <a routerLink="/sign-up">sign up</a>
+        </li>
+        <li class="footer__list__item">
+            <a routerLink="/contacts">contacts</a>
+        </li>
+    </ul>
+    <article class="footer__copyright">
+        <p>Copyright &copy;2023. All rights reserved.</p>
+        <p>Created by IPaskov.</p>
+    </article>
+
+</footer>

@@ -6,14 +6,9 @@
     padding: .2rem 1.4rem;
     margin-inline: auto;
 
-
-    // background: aqua;
-
     &__list {
         display: flex;
-        margin: 0;
         padding: 1rem;
-        list-style: none;
 
         &__item {
             margin: 0 1rem;
@@ -33,7 +28,7 @@
             a {
                 color: var(--text-color);
                 text-transform: capitalize;
-                font-weight: 500;
+                font-weight: 600;
             }
         }
     }

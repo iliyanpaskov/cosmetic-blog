@@ -10,7 +10,6 @@ html {
 }
 
 body {
-    position: relative;
     margin: 0;
     padding: 0;
     background: var(--background-color);
@@ -18,4 +17,9 @@ body {
 
 main {
     min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
