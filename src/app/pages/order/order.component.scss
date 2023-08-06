@@ -1,0 +1,38 @@
+@use '../../global-styles/' as gs;
+
+.order {
+    @include gs.pageFlexCenter(column, center);
+
+    &__title {
+        @include gs.pageTitle(gs.$buttonsBackgroundColor);
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__image__wrapper {
+            @include gs.rotatedImage(60%, auto, 0)
+        }
+
+        &__text {
+            width: 35%;
+            text-align: center;
+            line-height: 1.5rem;
+
+            &>h2 {
+                text-transform: capitalize;
+            }
+
+            &>button {
+                @include gs.setButton(gs.$textColor, none, gs.$textColor, gs.$buttonsBackgroundColor, #c87a60);
+                
+                &>a {
+                    font-size: 1.2rem;
+                }
+            }
+
+        }
+    }
+}

@@ -37,10 +37,10 @@
     font-size: 4rem;
     font-weight: 600;
     color: $color;
-    -webkit-text-stroke: 2px #1f1d1d;
+    -webkit-text-stroke: 1.5px #1f1d1d;
 }
 
-@mixin rotatedRightImage ($width,$height,$deg){
+@mixin rotatedImage ($width,$height,$deg){
     width: $width;
     height: $height;
     transform: rotate($deg);

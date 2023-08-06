@@ -13,19 +13,19 @@
         align-items: center;
 
         &__first__image__wrapper {
-            @include gs.rotatedRightImage (40%, 28rem, 12deg);
+            @include gs.rotatedImage (40%, 28rem, 12deg);
         }
 
         &__second__image__wrapper {
-            @include gs.rotatedRightImage (50%, 17rem, -9deg);
+            @include gs.rotatedImage (50%, 17rem, -9deg);
         }
 
         &__third__image__wrapper {
-            @include gs.rotatedRightImage (55%, 18rem, 7deg);
+            @include gs.rotatedImage (55%, 18rem, 7deg);
         }
 
         &__fourth__image__wrapper {
-            @include gs.rotatedRightImage (46%, 12rem, -13deg);
+            @include gs.rotatedImage (46%, 12rem, -13deg);
         }
 
         &__content {
