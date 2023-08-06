@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { OrderComponent } from './order/order.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 
 
@@ -10,7 +11,8 @@ import { OrderComponent } from './order/order.component';
   declarations: [
     HomeComponent,
     AboutComponent,
-    OrderComponent
+    OrderComponent,
+    SignUpComponent
   ],
   imports: [
     CommonModule
@@ -19,6 +21,7 @@ import { OrderComponent } from './order/order.component';
     HomeComponent,
     AboutComponent,
     OrderComponent,
+    SignUpComponent,
   ]
 })
 export class PagesModule { }
