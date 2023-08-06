@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { OrderComponent } from './order/order.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 
 
@@ -12,7 +13,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     HomeComponent,
     AboutComponent,
     OrderComponent,
-    SignUpComponent
+    SignUpComponent,
+    ContactsComponent
   ],
   imports: [
     CommonModule
@@ -22,6 +24,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     AboutComponent,
     OrderComponent,
     SignUpComponent,
+    ContactsComponent
   ]
 })
 export class PagesModule { }
