@@ -1,0 +1,19 @@
+@use '../../global-styles/' as gs;
+
+.not__found{
+    @include gs.pageFlexCenter(column,center);
+    max-height: 100vh;
+    position: relative;
+    // z-index: -1;
+
+    &__image{
+        width: 100%;
+        height: 85vh;
+
+        &>img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

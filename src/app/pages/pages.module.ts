@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { OrderComponent } from './order/order.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -14,7 +15,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     AboutComponent,
     OrderComponent,
     SignUpComponent,
-    ContactsComponent
+    ContactsComponent,
+    NotFoundComponent
   ],
   imports: [
     CommonModule
@@ -24,7 +26,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     AboutComponent,
     OrderComponent,
     SignUpComponent,
-    ContactsComponent
+    ContactsComponent,
+    NotFoundComponent
   ]
 })
 export class PagesModule { }
