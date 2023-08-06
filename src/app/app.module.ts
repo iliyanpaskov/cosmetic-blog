@@ -8,13 +8,13 @@ import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    PagesModule
+    PagesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

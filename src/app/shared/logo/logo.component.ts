@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InformationService } from 'src/app/information.service';
 
 @Component({
   selector: 'app-logo',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./logo.component.scss']
 })
 export class LogoComponent {
+  constructor(private info:InformationService){}
+  name: string = this.info.title;
 
-}
+} 

@@ -1,0 +1,60 @@
+@use '../../global-styles/' as gs;
+
+.home {
+    @include gs.pageFlexCenter (column, center);
+    position: relative;
+    
+    &__title__container {
+        position: relative;
+        top: 2rem;
+        height: 12.2rem;
+        &>h1 {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            font-size: 10rem;
+            font-weight: 900;
+        }
+        
+        
+        &>p{
+            position: absolute;
+            width: 20rem;
+            bottom: 20%;
+            left: 0;
+            transform: translate(-48%, 0%);
+            font-size: 2rem;
+            letter-spacing: 0.15rem;
+            text-align: center;
+        }
+    }
+    
+    &__title {
+        color: gs.$mainBackgroundColor;
+        -webkit-text-stroke: 3px gs.$textColor;
+
+        &__cover {
+            color: gs.$buttonsBackgroundColor;
+        -webkit-text-stroke: 3px gs.$textColor;
+            animation: animate 4s ease-in-out infinite;
+        }
+    }
+
+  
+
+    &__text{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(1% 100%, 0% 65%, 14% 71%, 27% 75%, 39% 78%, 54% 76%, 64% 66%, 74% 59%, 88% 56%, 99% 59%, 100% 100%, 56% 100%);
+    }
+
+    50% {
+        clip-path: polygon(1% 100%, 0% 65%, 13% 57%, 26% 59%, 38% 67%, 50% 76%, 62% 79%, 75% 76%, 89% 69%, 99% 59%, 100% 100%, 56% 100%);
+    }
+}

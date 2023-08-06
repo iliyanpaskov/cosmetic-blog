@@ -1,0 +1,41 @@
+@use '../../global-styles/' as gs;
+
+.about {
+    @include gs.pageFlexCenter(column, center);
+
+    &__title {
+     @include gs.pageTitle (gs.$buttonsBackgroundColor);
+    }
+
+    &__article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__first__image__wrapper {
+            @include gs.rotatedRightImage (40%, 28rem, 12deg);
+        }
+
+        &__second__image__wrapper {
+            @include gs.rotatedRightImage (50%, 17rem, -9deg);
+        }
+
+        &__third__image__wrapper {
+            @include gs.rotatedRightImage (55%, 18rem, 7deg);
+        }
+
+        &__fourth__image__wrapper {
+            @include gs.rotatedRightImage (46%, 12rem, -13deg);
+        }
+
+        &__content {
+            width: 45%;
+            text-align: center;
+
+        }
+    }
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}

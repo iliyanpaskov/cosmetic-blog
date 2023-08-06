@@ -1,10 +1,12 @@
+@use '../../global-styles/' as gs;
+
 .logo {
     text-align: center;
     transition: transform 1.8s;
 
     &__title,
     &__text {
-        color: var(--text-color);
+        color: gs.$textColor;
     }
 
     &__title {
