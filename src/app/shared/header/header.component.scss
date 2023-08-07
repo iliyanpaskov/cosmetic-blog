@@ -10,12 +10,34 @@
     margin-inline: auto;
     z-index: 1;
 
+    @include gs.breakpoint(medium) {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    &__navigation {
+        width: 100%;
+    }
+
     &__list {
         display: flex;
         padding: 1rem;
+        justify-content: flex-end;
+
+        @include gs.breakpoint(medium) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
         &__item {
-           @include gs.setButton (gs.$textColor,none,none,gs.$buttonsBackgroundColor,#c87a60,)
+            @include gs.setButton (gs.$textColor, none, none, gs.$buttonsBackgroundColor, #c87a60, );
+
+            @include gs.breakpoint(small) {
+                padding: 0.5rem 0.7rem;
+                margin: 0;
+            }
+
         }
     }
 }

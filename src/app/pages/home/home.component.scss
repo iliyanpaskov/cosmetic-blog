@@ -3,20 +3,29 @@
 .home {
     @include gs.pageFlexCenter (column, center);
     position: relative;
-    
+
     &__title__container {
         position: relative;
         top: 2rem;
         height: 12.2rem;
+
+        @include gs.breakpoint(xs) {
+            height: 8rem;
+        }
+
         &>h1 {
             position: absolute;
             transform: translate(-50%, -50%);
             font-size: 10rem;
             font-weight: 900;
+
+            @include gs.breakpoint(xs) {
+                font-size: 5rem;
+                margin-bottom: 0.5rem;
+            }
         }
-        
-        
-        &>p{
+
+        &>p {
             position: absolute;
             width: 20rem;
             bottom: 20%;
@@ -25,25 +34,35 @@
             font-size: 2rem;
             letter-spacing: 0.15rem;
             text-align: center;
+
+            @include gs.breakpoint(xs) {
+                font-size: 1.5rem;
+            }
         }
     }
-    
+
     &__title {
         color: gs.$mainBackgroundColor;
         -webkit-text-stroke: 3px gs.$textColor;
+        text-shadow: 0 0 0.8rem #646464;
+
 
         &__cover {
             color: gs.$buttonsBackgroundColor;
-        -webkit-text-stroke: 3px gs.$textColor;
+            -webkit-text-stroke: 3px gs.$textColor;
             animation: animate 4s ease-in-out infinite;
         }
     }
 
-  
 
-    &__text{
+
+    &__text {
         text-align: center;
         font-size: 1.1rem;
+
+        @include gs.breakpoint(xs) {
+            font-size: 0.9rem;
+        }
     }
 }
 

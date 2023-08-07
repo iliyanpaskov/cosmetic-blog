@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class InformationService {
 
-  title:string = 'mXoX';
+  title:string = 'mXiX';
 
   constructor() { }
 }

@@ -4,7 +4,9 @@
     @include gs.pageFlexCenter(column, center);
 
     &__title {
-     @include gs.pageTitle (gs.$buttonsBackgroundColor);
+        @include gs.pageTitle (gs.$buttonsBackgroundColor);
+        margin-inline: auto;
+        text-align: center;
     }
 
     &__article {
@@ -12,30 +14,75 @@
         justify-content: space-between;
         align-items: center;
 
+        @include gs.breakpoint(medium) {
+            flex-direction: column
+        }
+
         &__first__image__wrapper {
             @include gs.rotatedImage (40%, 28rem, 12deg);
+
+            @include gs.breakpoint(medium) {
+                @include gs.rotatedImage (60%, 30rem, 0);
+            }
+
+            @include gs.breakpoint(small) {
+                @include gs.rotatedImage (100%, auto, 0);
+            }
         }
 
         &__second__image__wrapper {
             @include gs.rotatedImage (50%, 17rem, -9deg);
+
+            @include gs.breakpoint(medium) {
+                @include gs.rotatedImage (70%, 20rem, 0);
+            }
+
+            @include gs.breakpoint(small) {
+                @include gs.rotatedImage (100%, auto, 0);
+            }
+
         }
 
         &__third__image__wrapper {
             @include gs.rotatedImage (55%, 18rem, 7deg);
+
+            @include gs.breakpoint(medium) {
+                @include gs.rotatedImage (70%, 16rem, 0);
+            }
+
+            @include gs.breakpoint(small) {
+                @include gs.rotatedImage (100%, auto, 0);
+            }
+
         }
 
         &__fourth__image__wrapper {
             @include gs.rotatedImage (46%, 12rem, -13deg);
+
+            @include gs.breakpoint(medium) {
+                @include gs.rotatedImage (70%, 10rem, 0);
+            }
+
+            @include gs.breakpoint(small) {
+                @include gs.rotatedImage (100%, auto, 0);
+            }
         }
 
         &__content {
             width: 45%;
             text-align: center;
 
+            @include gs.breakpoint(medium) {
+                width: 100%;
+            }
         }
     }
 }
 
 .reversed {
     flex-direction: row-reverse;
+
+    @include gs.breakpoint(medium) {
+        flex-direction: column;
+    }
 }

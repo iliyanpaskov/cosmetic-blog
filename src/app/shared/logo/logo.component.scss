@@ -1,22 +1,29 @@
-@use '../../global-styles/' as gs;
+@use '../../global-styles/' as style;
 
 .logo {
     text-align: center;
     transition: transform 1.8s;
 
+    @include style.breakpoint(medium) {
+        display: none;
+    }
+  
+
     &__title,
     &__text {
-        color: gs.$textColor;
+        color: style.$textColor;
     }
 
     &__title {
         margin: 0;
-        font-size: 2.4rem;
+        font-size: 2.7rem ;
         font-weight: 800;
     }
 
     &__text {
-        font-size: 0.7rem;
+        margin: 0;
+        font-weight: 400;
+        font-size: 0.55rem;
         text-transform: uppercase;
     }
 

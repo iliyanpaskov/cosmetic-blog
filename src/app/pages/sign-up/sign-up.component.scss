@@ -12,14 +12,25 @@
         justify-content: space-between;
         align-items: center;
 
+        @include gs.breakpoint(medium){
+            flex-direction: column;
+        }
+
         &__image__wrapper {
             @include gs.rotatedImage(60%, auto, 0);
+
+            @include gs.breakpoint(medium){
+                @include gs.rotatedImage(100%, auto, 0);
+            }
         }
 
         &__text {
             width: 30%;
             text-align: center;
             line-height: 1.5rem;
+            @include gs.breakpoint(medium){
+                width: 100%;
+            }
 
             &>h2 {
                 text-transform: capitalize;

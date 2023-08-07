@@ -23,6 +23,11 @@
         display: flex;
         justify-content: center;
 
+        @include g-styles.breakpoint(medium) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         &__item {
             &>a:hover {
                 color: g-styles.$textColor;
